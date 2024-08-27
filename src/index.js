@@ -33,25 +33,25 @@ const TextFileContent = () => {
           path="/"
           element={
             <Label 
-              shipment={fileContent[0]}
-              truck={fileContent[1]}
-              location={fileContent[2]}
-              trip={fileContent[3]}
-              numpallet={fileContent[4]}
-              totalpallet={fileContent[5]}
-              way={fileContent[6]} />
+              shipment={fileContent[1]}
+              truck={fileContent[2]}
+              location={fileContent[3]}
+              trip={fileContent[4]}
+              numpallet={fileContent[5]}
+              totalpallet={fileContent[6]}
+              way={fileContent[7]} />
           } />
         <Route
           path="/bema2"
           element={
             <Label 
-              shipment={fileContent[7]}
-              truck={fileContent[8]}
-              location={fileContent[9]}
-              trip={fileContent[10]}
-              numpallet={fileContent[11]}
-              totalpallet={fileContent[12]}
-              way={fileContent[13]} />
+              shipment={fileContent[9]}
+              truck={fileContent[10]}
+              location={fileContent[11]}
+              trip={fileContent[12]}
+              numpallet={fileContent[13]}
+              totalpallet={fileContent[14]}
+              way={fileContent[15]} />
           } />
       </Routes>
     </BrowserRouter>
