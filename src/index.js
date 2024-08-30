@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
-import {Label} from "./Label.js";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { Label } from "./Label.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -32,7 +32,8 @@ const TextFileContent = () => {
         <Route
           path="/"
           element={
-            <Label 
+            <Label
+              ude={fileContent[0]}
               shipment={fileContent[1]}
               truck={fileContent[2]}
               location={fileContent[3]}
@@ -44,7 +45,8 @@ const TextFileContent = () => {
         <Route
           path="/bema2"
           element={
-            <Label 
+            <Label
+              ude={fileContent[8]}
               shipment={fileContent[9]}
               truck={fileContent[10]}
               location={fileContent[11]}
@@ -60,6 +62,6 @@ const TextFileContent = () => {
 
 root.render(
   <>
-    <TextFileContent/>
+    <TextFileContent />
   </>
 );

@@ -2,7 +2,7 @@ export function Label(props) {
   return (
     <div className="main">
       <div className="logo">
-       <img alt="arca_logo" src="arca.png" height="60px"/>
+        <img alt="arca_logo" src="arca.png" height="60px" />
       </div>
       <table>
         <tr>
@@ -21,7 +21,7 @@ export function Label(props) {
           <th>LOCALIDAD</th>
         </tr>
         <tr>
-          <td>Generico .</td>
+          <td>Gen{props.ude}</td>
           <td>{props.location}</td>
         </tr>
       </table>
@@ -41,7 +41,7 @@ export function Label(props) {
       <div className="datamatrix">
         <img
           alt="Datamatrix"
-          src={`https://barcode.tec-it.com/barcode.ashx?data=${props.shipment}%0A&code=DataMatrix&unit=Px&dpi=96&dmsize=Default&modulewidth=10`}/>
+          src={`https://barcode.tec-it.com/barcode.ashx?data=${props.shipment}%0A&code=DataMatrix&unit=Px&dpi=96&dmsize=Default&modulewidth=10`} />
       </div>
       <div className="shipmentnr">
         {props.shipment}
