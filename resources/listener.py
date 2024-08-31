@@ -18,7 +18,7 @@ def main():
 
 def write_file(mensaje):
     data=mensaje.replace('[','').replace(']','').replace('"','')
-    os.system('echo "{0}" > /home/vulnhub/Downloads/ACLabel/public/data.txt'.format(data))
+    os.system('echo "{0}" > /app/result/data.txt'.format(data))
 
 if __name__=='__main__':
     main()

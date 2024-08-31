@@ -12,7 +12,7 @@ const TextFileContent = () => {
   useEffect(() => {
     const fetchFileContent = async () => {
       try {
-        const response = await fetch('data.txt');
+        const response = await fetch('/files/data.txt');
         if (!response.ok) {
           throw new Error('No se pudo cargar el archivo.');
         }
