@@ -38,11 +38,7 @@ export function Label(props) {
           <td>{props.way}</td>
         </tr>
       </table>
-      <div className="datamatrix">
-        <img
-          alt="Datamatrix"
-          src={`https://barcode.tec-it.com/barcode.ashx?data=${props.shipment}%0A&code=DataMatrix&unit=Px&dpi=96&dmsize=Default&modulewidth=10`} />
-      </div>
+      <div className="datamatrix" dangerouslySetInnerHTML={{ __html: window.DATAMatrix({msg: props.shipment, dim: 185, pad: 0.5}).outerHTML }} />
       <div className="shipmentnr">
         {props.shipment}
       </div>
